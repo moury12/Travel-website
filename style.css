@@ -1,0 +1,987 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    align-items: flex-start
+}
+.img1{
+        margin-right: 370px;
+        
+        width: 100px;
+        border-radius: 50px; 
+        align-items: flex-start;
+}
+#travel h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: white;
+
+}
+#travel h3{
+    font-size: 30px;
+    color: white;
+}
+#travel h5{
+    color:white;
+    margin: 1%;
+    font-size: 15px;
+    font-weight: 300;
+    align-items: center;
+}
+#header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 7% ;
+    background: black;
+    height:50px;
+    color: azure;
+    bottom: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 1000;
+    position: sticky;
+    top:0;
+    left: 0;
+
+}
+#menu-bar{
+    font-size: 20px;
+    color:rgba(255, 255, 255, 0.858);
+    border: rgba(255, 255, 255, 0.858);
+    border-radius: 20px;
+    cursor: pointer;
+    display: none;
+    
+}
+#menu-bar:hover{
+    color: #dda0dd;
+}
+
+#close{
+    display: none;
+}
+
+#nav{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    padding-left: 40%;
+    
+}
+#nav li{
+    list-style: none;
+    padding: 0 10px;
+    position: relative;
+    cursor: pointer;
+}
+#nav li a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.858);
+    transition: 0.3 ease;
+}
+#nav li :hover,
+#nav li .active{
+color: #dda0dd;
+}
+
+#travel{
+    background-image: url("img/1.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover ;
+    background-position: top 25%  right 0;
+    padding: 0 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#travel button{
+    border:#dda0dd;
+    background: #dda0dd;
+    color: white;
+    width: 120px;
+    border-radius: 70px;
+    border-color: #dda0dd;
+    height: 35px;
+    float: inline-end;
+    border-bottom-color: #dda0dd;
+    cursor: pointer;
+    font-size: 15px;
+}
+#travel button:hover{
+    background: rgba(0, 255, 255, 0.774); ;
+}
+.search-bar-container{
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    padding: 10px 5px;
+    background:rgba(0, 0, 0, 0.612) ;
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    display: none;
+}
+.search-bar-container.active{
+    display: initial;
+}
+.search-bar-container #search-bar{
+    width: 95%;
+    justify-content: space-around;
+    padding: 5px;
+    text-transform: none;
+    color: #333;
+    font-size: 15px;
+    border-radius: 4px;
+ align-items: center;
+}
+.search-bar-container label{
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.login-form-container{
+    margin-top: 20px;
+    position: fixed;
+    top: -120%; right: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width: 30%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+}
+.login-form-container.active{
+    top: 0;
+}
+.login-form-container form{
+    margin: 2rem 0;
+    right: 0;
+    padding: 1.5rem 2rem;
+    background:#dda0dd;
+    width: 100%;
+    color:rgb(255, 255, 255);
+    border-radius: 10px;
+    
+}
+.login-form-container form h3{
+    font-size: 30px;
+    color: white;
+    text-decoration: wavy;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0;
+}
+.login-form-container form .box{
+ width: 100%;
+ height: 35px;
+ padding: 8px;
+ font-size: 15px;
+ color: black;
+ margin: 6px 0;
+ display: flex;
+
+}
+.login-form-container form .box:focus{
+    border-color: #dda0dd;
+}
+.login-form-container form #remember{
+    margin: 10px 0;
+}
+.login-form-container form .btn{
+    background: rgba(0, 0, 0, 0.455);
+    color: white;
+    width: 40%;
+    border: #dda0dd;
+    border-radius: 50px;
+    height: 35px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 35%;
+    display: block; 
+}
+.login-form-container form .btn:hover{
+    background:rgba(0, 255, 255, 0.774) ;
+}
+.login-form-container form .f {
+    color: black;
+}
+.login-form-container form .f:hover{
+color:rgba(0, 255, 255, 0.774);
+text-decoration: underline;
+}
+.login-form-container #form-close{
+    position: absolute;
+    margin-top: 5%;
+  top: 4%; right: 4%;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+.login-form-container #form-close:hover{
+    color:rgba(0, 255, 255, 0.774);
+}
+#packages{
+    background: rgba(51, 51, 51, 0.355);
+    text-align: center;
+    
+}
+#packages .pro-container{
+ display: flex;
+ justify-content: space-between;
+ padding:2%;
+ flex-wrap: wrap;
+}
+
+#packages .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 7px 8px;
+    background: whitesmoke;
+    margin: 0.5%;
+    
+}
+#packages .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#packages .pro img{
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+#packages h3{
+    color:black;
+}
+#packages h1{
+    color: #333;
+    font-size: 50px;
+    font-weight: 300;
+}
+#packages .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#packages .pro .des span{
+    color:red;
+    font-size: 15px;
+}
+#packages .pro .des p{
+    padding-top:7px ;
+    color: #333;
+    font-weight: 300;
+    font-size: 15px;
+}
+#packages .pro .des i{
+    cursor: pointer;
+}
+#packages .pro .des .star{
+    color: rgb(255, 166, 33);
+    font-size: 10px;
+    padding-top: 6px;
+}
+#packages .pro .des .price{
+    padding-bottom: 6px;
+    padding-top: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(255, 83, 83);
+}
+#packages h5{
+    color: rgba(51, 51, 51, 0.832);
+    font-size: 15px;
+}
+#map{
+    color: red;
+    font-size: 15px;
+}
+#packages button{
+    border:rgb(225, 63, 117);
+    background:rgb(225, 63, 117);
+    color: white;
+    width: 90px;
+    border-color: #dda0dd;
+    height: 25px;
+    float: inline-end;
+    border-bottom-color: #dda0dd;
+    cursor: pointer;
+    font-size: 15px;
+    align-items: center;
+}
+#packages button:hover{
+    background: rgba(0, 255, 255, 0.774); ;
+}
+
+
+#hotels{
+    background: rgba(51, 51, 51, 0.355);
+    text-align: center;
+    
+}
+#hotels .pro-container{
+ display: flex;
+ justify-content: space-between;
+ padding:2%;
+ flex-wrap: wrap;
+}
+
+#hotels .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 7px 8px;
+    background: whitesmoke;
+    margin: 0.5%;
+    
+}
+#hotels .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#hotels .pro img{
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+#hotels h3{
+    color:black;
+}
+#hotels h1{
+    color: #333;
+    font-size: 50px;
+    font-weight: 300;
+}
+#hotels .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#hotels .pro .des span{
+    color:red;
+    font-size: 15px;
+}
+#hotels .pro .des p{
+    padding-top:7px ;
+    color: #333;
+    font-weight: 300;
+    font-size: 15px;
+}
+#hotels .pro .des i{
+    cursor: pointer;
+}
+#hotels .pro .des .star{
+    color: rgb(255, 166, 33);
+    font-size: 10px;
+    padding-top: 6px;
+}
+#hotels .pro .des .price{
+    padding-bottom: 6px;
+    padding-top: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(255, 83, 83);
+}
+#hotels h5{
+    color: rgba(51, 51, 51, 0.832);
+    font-size: 15px;
+}
+#map{
+    color: red;
+    font-size: 15px;
+}
+#hotels button{
+    border:rgb(225, 63, 117);
+    background:rgb(225, 63, 117);
+    color: white;
+    width: 90px;
+    border-color: #dda0dd;
+    height: 25px;
+    float: inline-end;
+    border-bottom-color: #dda0dd;
+    cursor: pointer;
+    font-size: 15px;
+    align-items: center;
+}
+#hotels button:hover{
+    background: rgba(0, 255, 255, 0.774); ;
+}
+#flights{
+    background: rgba(51, 51, 51, 0.355);
+    text-align: center;
+    
+}
+#flights .pro-container{
+ display: flex;
+ justify-content: space-between;
+ padding:2%;
+ flex-wrap: wrap;
+}
+
+#flights .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 7px 8px;
+    background: whitesmoke;
+    margin: 0.5%;
+    
+}
+#flights .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#flights .pro img{
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+#flights h3{
+    color:black;
+}
+#flights h1{
+    color: #333;
+    font-size: 50px;
+    font-weight: 300;
+}
+#flights .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#flights .pro .des span{
+    color:red;
+    font-size: 15px;
+}
+#flights .pro .des p{
+    padding-top:7px ;
+    color: #333;
+    font-weight: 300;
+    font-size: 15px;
+}
+#flights .pro .des i{
+    cursor: pointer;
+}
+#flights .pro .des .star{
+    color: rgb(255, 166, 33);
+    font-size: 10px;
+    padding-top: 6px;
+}
+#flights .pro .des .price{
+    padding-bottom: 6px;
+    padding-top: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(255, 83, 83);
+}
+#flights .pro .des .price .tk{
+    color: green;
+}
+#flights h5{
+    color: rgba(51, 51, 51, 0.832);
+    font-size: 15px;
+}
+#map{
+    color: red;
+    font-size: 15px;
+}
+#flights button{
+    border:rgb(225, 63, 117);
+    background:rgb(225, 63, 117);
+    color: white;
+    width: 90px;
+    border-color: #dda0dd;
+    height: 25px;
+    float: inline-end;
+    border-bottom-color: #dda0dd;
+    cursor: pointer;
+    font-size: 15px;
+    align-items: center;
+}
+#flights button:hover{
+    background: rgba(0, 255, 255, 0.774); ;
+}
+#feature .fe-box{
+    margin: 2%;
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 20px #333;
+    border: 1px solid gray;
+}
+.booking h2{
+    padding: 1%;
+    color: white;
+    text-align: center;
+    background: #999;
+}
+
+
+.booking .book-form{
+    padding: 60px;
+    background: #999;
+}
+.booking .book-form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.booking .book-form .flex .inputBox{
+    flex:  45%;
+    clear: both;
+}
+.booking .book-form .flex .inputBox input{
+    width: 250px;
+    padding: 1.2rem 1.4rem;
+    font-size: 16px;
+    color: black;
+    text-transform: none;
+    border: 5px;
+    height: 15px;
+    float: right;
+    margin-right:80px ;
+}
+.booking .book-form .flex .inputBox span{
+    float: left;
+    margin-left: 4px;
+    padding-right: 1px;
+    font-size: large;
+    font-weight: 800;
+    color: white;
+}
+.booking .book-form .flex .inputBox input:focus{
+    background-color: #dda0dd;
+    color: black;
+}
+.booking .book-form .flex .inputBox input:focus::placeholder{
+    background: #dda0dd;
+    color: black;
+    font-size: smaller;
+}
+.booking .book-form .flex .inputBox #dropdown{
+    width: 250px;
+    padding: 1.2rem 1.4rem;
+    font-size: 16px;
+    color: black;
+    text-transform: none;
+    border: 5px;
+    height: 15px;
+    float: right;
+    margin-right:80px ;
+}
+.booking .book-form .flex .inputBox .form-control:focus{
+    background-color: #dda0dd;
+    color: black;
+}
+.booking .book-form .flex .inputBox .form-control:focus::placeholder{
+    background: #dda0dd;
+    color: black;
+    font-size: smaller;
+}
+.booking .book-form .flex  .btn{
+    width: 90px;
+    height: 30px;
+    font-size: medium;
+    color:white;
+    background-color: black;
+}
+main{
+    max-width: 1500px;
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin: auto;
+    background-color: #999;
+}
+main .card{
+    max-width: 350px;
+    flex: 1 1 210px;
+    text-align: center;
+    height: 180px;
+    justify-content:space-between;
+    margin: 20px;
+    background-color:#999;
+}
+main .card .image{
+    height:40%;
+}
+
+main .card  form .btn{
+   background-color: blueviolet;
+   color: white;
+   border: #ffffff;
+   height: 25px;
+   width: 80px;
+   border-radius: 20%;
+   margin: 20px;
+ bottom: 10px;
+   
+}
+main .card  form .btn :hover{
+    cursor: pointer;
+}
+main .card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+main .card .caption{
+    padding-left: 10px;
+    text-align: left;
+    height: 25%;
+    
+}
+main .card .caption .d{
+    font-size: medium;
+    font-weight: 600;
+    align-items: center;
+
+}
+main .card .caption .a{
+    font-size: medium;
+    color: chartreuse;
+    font-weight: 400;
+}
+main .card .caption .p{
+    color: red;
+}
+footer{
+
+	bottom: 0;
+}
+.footer-distributed{
+	background-color: black;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+	
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+.footer-distributed .footer-left{
+	width: 40%;
+}
+ 
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+.footer-distributed img{
+    margin: 0;
+    height: 10%;
+    width: 24%;
+}
+ 
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+ 
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+ 
+.footer-distributed .footer-center{
+left: 0;
+
+}
+ 
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+ 
+.footer-distributed .footer-right{
+	width: 20%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+.footer-distributed .footer-icons img{
+    width: 100%;
+    height: 100%;
+}
+#slider {
+	overflow: hidden;
+}
+
+
+@keyframes slider {
+	0% { left: 0; }
+	30% { left: 0; }
+	33% { left: -100%; }
+	63% { left: -100%; }
+	66% { left: -200%; }
+	95% { left: -200%; }
+	100% { left: 0; }
+}
+#slider figure {
+    height: 350px;  
+	width:300%;
+	position: relative;
+	animation: 11s slider infinite;
+}
+#slider figure img{
+    object-fit:cover ;
+}
+
+
+#slider figure img {
+	width: 33.333333333%;
+	height : 100%;
+	float: left;
+}
+@media (max-width:800px){
+    #menu-bar{
+        padding: 2%;
+     display:flex ;
+     font-size: 15px;
+    }
+    #nav{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0; left: -170px;
+        height: 100vh;
+        width: 170px;
+       background: rgba(0, 0, 0, 0.612);
+        padding:80px 0 0 10px ;
+        transition: 0.3s;
+    }
+    #nav.active{
+        left: 0px;
+    }
+    #nav li {
+       margin-bottom: 25px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: rgba(255, 255, 255, 0.858);
+        font-size: 20px;
+        cursor: pointer;
+    }
+    #close:hover{
+        color: #dda0dd;
+    }
+    #travel{
+        height: 50vh;
+        background-position: top 40%  right 70% ;
+        padding: 30px 80px;
+        
+    }
+    #travel h5{
+        font-size: 0px;
+    }
+    #travel h1{
+        font-size: 20px;
+        line-height: 54px;
+        color: white;
+    
+    }
+    #travel h3{
+        font-size: 10px;
+        color: white;
+    }
+
+    p{
+        font-size: smaller;
+    }
+    h5{
+        color:white;
+        margin: 1%;
+        font-size: 8px;
+        font-weight: 300;
+        align-items: center;
+    }
+    #travel button{
+      
+        font-size: 10px;
+    }
+    .footer-distributed{
+		font: bold 14px sans-serif;
+	
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+    .login-form-container{
+    
+        height: 25vh;
+        width: 50%;
+    }
+    .login-form-container form .box{
+        width: 100%;
+        height: 25px;
+        font-size: 15px;
+       
+       }
+       .search-bar-container label{
+        font-size: 14px;
+        margin-left: 5px;
+        margin-left: 5px;
+    }
+
+.search-bar-container #search-bar{
+    width: 50%;
+    align-items: center;
+    
+}
+.img1{
+    width: 80px;
+}
+
+#packages .pro-container{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+#packages .pro{
+    width: 80%;
+}
+#hotels .pro-container{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+#hotels .pro{
+    width: 80%;
+}
+#flights .pro-container{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+#flights .pro{
+    width: 80%;
+}
+.footer{
+    background-color: black;
+   height: 200px;
+   bottom: 0px;
+    width: 100%;
+    
+}
+}
+@media (max-width:260px){
+    #travel button{
+        width: 100px;
+        height: 75px;
+        font-size: 14px;
+    }
+}

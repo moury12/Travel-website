@@ -1,0 +1,246 @@
+.wrapper {
+    width: 100%;
+    height: 1000px;
+    background-color: silver;
+  }
+  
+  
+  .content {
+    width: 100%;
+    height: 750px;
+   
+    float: left;
+  }
+  .Box {
+    width: 100%;
+    height: 750px;
+    background-color: silver;
+    float: left;
+    margin: 3px;
+  }
+  .Box .BoxOne {
+    height: 200px;
+    width: 25%;
+    background-color: silver;
+    ;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    transform: rotate(0deg) scale(1);
+    transition: all 2s;
+    background-image: url(../images/1.jpg);
+    background-size: cover;
+  }
+  
+  .Box .BoxOne:hover {
+    transform: rotate(200deg) scale(1.5);
+  }
+  
+  .Box .BoxTwo {
+    height: 200px;
+    width: 20%;
+   
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    transform: rotate(0deg) scale(1);
+    transition: all 2s;
+    background-image: url(../images/2.jpg);
+    background-size: cover;
+  }
+  
+  .Box .BoxTwo:hover {
+    transform: rotate(200deg) scale(1.5);
+  }
+  
+  .Box .BoxThree {
+    height: 200px;
+    width: 25%;
+    
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    transform: rotate(0deg) scale(1);
+    transition: all 2s;
+    background-image: url(../images/3.jpg);
+    background-size: cover;
+  }
+  
+  .Box .BoxThree:hover {
+    transform: rotate(100deg) scale(1.5);
+  }
+  
+  .Box .BoxFour {
+    height: 200px;
+    width: 20%;
+    background-color: green;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    transform: rotate(0deg) scale(1);
+    transition: all 2s;
+    background-image: url(../images/4.jpg);
+    background-size: cover;
+  }
+  
+  .Box .BoxFour:hover {
+    transform: scale(1.5);
+  }
+  
+  .Box .BoxFive {
+    height: 200px;
+    width: 25%;
+    background-color: green;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    transform: rotate(0deg) skewY(0deg);
+    transition: all 2s;
+    background-image: url(../images/5.jpg);
+    background-size: cover;
+  }
+  
+  .Box .BoxFive:hover {
+    transform: rotate(400deg) skewY(-30deg);
+  }
+  
+  .Box .BoxSix {
+    height: 200px;
+    width: 25%;
+    background-color: green;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    transform: skewY(0deg);
+    transition: all 2s;
+    background-image: url(../images/6.jpg);
+    background-size: cover;
+  }
+  
+  .Box .BoxSix:hover {
+    transform: skewY(-40);
+  }
+  
+  .Box .BoxSeven {
+    height: 200px;
+    width: 20%;
+    background-color: green;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    transform: rotate(0deg) skewX(0deg);
+    transition: all 2s;
+    background-image: url(../images/7.jpg);
+    background-size: cover;
+  }
+  
+  .Box .BoxSeven:hover {
+    transform: rotate(300deg) skewX(-30);
+  }
+  
+  .Box .BoxEight {
+    height: 200px;
+    width: 20%;
+    background-color: green;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    transform: rotate(0deg) scale(1);
+    transition: all 2s;
+    background-image: url(../images/8.jpg);
+    background-size: cover;
+  }
+  
+  .Box .BoxEight:hover {
+    transform: rotate(100deg) scale(1.5);
+  }
+  
+  .Box .BoxNine {
+    height: 200px;
+    width: 25%;
+    background-color: green;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    transform: rotate(0deg) skewX(0deg);
+    transition: all 2s;
+    background-image: url(../images/9.jpg);
+    background-size: cover;
+  }
+  
+  .Box .BoxNine:hover {
+    transform: rotate(200deg) scale(1.5);
+  }
+  .Box .BoxTen {
+    height: 200px;
+    width: 20%;
+    background-color: green;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    transform: rotate(0deg) scale(1.5);
+    transition: all 5s;
+    background-image: url(../images/10.jpg);
+    background-size: cover;
+  }
+  
+  .Box .BoxTen:hover {
+    transform: rotate(50deg) scale(1.5);
+  }
+  
+  .Box .BoxEleven {
+    height: 200px;
+    width: 25%;
+    background-color: green;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    transform: rotate(0deg) skewX(0deg);
+    transition: all 2s;
+    background-image: url(../images/11.jpg);
+    background-size: cover;
+  }
+  
+  .Box .BoxEleven:hover {
+    transform: scale(1.5);
+  }
+  
+  .Box .BoxTwelve {
+    height: 200px;
+    width: 25%;
+    background-color: green;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    transform: rotate(0deg) skewY(0deg);
+    transition: all 2s;
+    background-image: url(../images/12.jpg);
+    background-size: cover;
+  }
+  
+  .Box .BoxTwelve:hover {
+    transform: scale(1.5);
+  }
+ 
+  .Box .Boxthirteen {
+    height: 200px;
+    width: 25%;
+    background-color: green;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    transform: rotate(0deg) skewY(0deg);
+    transition: all 2s;
+    background-image: url(../images/img13.jpg);
+    background-size: cover;
+  }
+  
+  .Box .Boxthirteen:hover {
+    transform: scale(1.5);
+  }
+  
+  .imgResponsive {
+    height: 100%;
+    width: 100%;
+  }
+  
